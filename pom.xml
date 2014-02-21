@@ -1,0 +1,46 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+    <groupId>liblinear-weka</groupId>
+	<artifactId>LibLINEAR</artifactId>
+	<version>1.9.0</version>
+	<packaging>jar</packaging>
+	<name>LibLINEAR</name>
+	<description>LibLINEAR Weka Wrapper</description>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>nz.ac.waikato.cms.weka</groupId>
+			<artifactId>weka-dev</artifactId>
+			<version>3.7.10</version>
+		</dependency>
+		
+		<dependency>
+      		<groupId>junit</groupId>
+		    <artifactId>junit</artifactId>
+      		<version>4.8.1</version>
+      		<scope>test</scope>
+	    </dependency>
+		
+	</dependencies>
+
+	<build>
+		<finalName>${project.name}-${project.version}</finalName>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+			</plugin>
+		</plugins>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+			<resource>
+				<directory>src/main/bin</directory>
+				<filtering>false</filtering>
+			</resource>
+		</resources>
+	</build>
+</project>
