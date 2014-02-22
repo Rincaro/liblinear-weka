@@ -7,7 +7,14 @@
 	<packaging>jar</packaging>
 	<name>LibLINEAR</name>
 	<description>LibLINEAR Weka Wrapper</description>
-
+	
+	<parent>
+		<groupId>com.rincaro</groupId>
+		<artifactId>rincaro-parent</artifactId>
+		<version>TRUNK-SNAPSHOT</version>
+		<relativePath />
+	</parent>
+	
 	<dependencies>
 
 		<dependency>
@@ -16,6 +23,12 @@
 			<version>3.7.10</version>
 		</dependency>
 		
+	<dependency>
+    	<groupId>de.bwaldvogel</groupId>
+    	<artifactId>liblinear</artifactId>
+    	<version>1.94</version>
+    	<scope>test</scope>
+	</dependency>		
 		<dependency>
       		<groupId>junit</groupId>
 		    <artifactId>junit</artifactId>
