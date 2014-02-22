@@ -27,7 +27,6 @@
     		<groupId>de.bwaldvogel</groupId>
     		<artifactId>liblinear</artifactId>
     		<version>1.94</version>
-    		<scope>test</scope>
 		</dependency>		
 		
 		<dependency>
